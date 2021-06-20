@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Image, Text, Heading } from 'theme-ui';
-import { LearnMore } from 'components/link';
+import { ClickHere } from 'components/link';
 
 const Service = ({ item }) => {
   return (
@@ -13,6 +13,7 @@ const Service = ({ item }) => {
         <Heading as="h3">{item?.title}</Heading>
         <Text as="p">{item?.description}</Text>
         {item?.moreLink && <LearnMore path={item?.moreLink} />}
+        {item?.clickLink && <ClickHere path={item?.clickLink} />}
       </Box>
     </Box>
   );

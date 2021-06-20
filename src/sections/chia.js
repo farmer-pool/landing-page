@@ -4,39 +4,42 @@ import { jsx, Box, Container } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
-import icon1 from 'assets/images/icons/service1.png';
-import icon2 from 'assets/images/icons/chia-logo.png';
-import icon3 from 'assets/images/icons/service2.png';
+import chiaLogo from 'assets/images/icons/chia-logo.png';
+import chiaCalc from 'assets/images/icons/chia-calc.png';
+import chiaLeaf from 'assets/images/icons/chia-leaf.png';
 
 const data = [
   {
     id: 1,
-    icon: icon1,
-    title: 'Chia Testnet',
-    description: `We are working day and night on chia testnet to develop chia pool based on official chia protocol.`,
+    icon: chiaLogo,
+    title: 'Chia Price',
+    description: `Get latest Chia price chart`,
+    clickLink: `https://coinmarketcap.com/currencies/chia-network/`,
   },
   {
-    id: 3,
-    icon: icon2,
-    title: 'Chia Pool',
-    description: `Chia Pool to Go Live by 1st July 2021`,
+    id: 2,
+    icon: chiaCalc,
+    title: 'Chia Calculator',
+    description: `How much can I earn farming Chia (XCH)?`,
+    clickLink: `https://chiacalculator.com/`,
   },
   {
-    id: 4,
-    icon: icon3,
-    title: 'Support of other PoS Cryptocurrencies',
-    description: `We are planning to provide support of other Proof of Space based cryto like Flax and others`,
+    id: 2,
+    icon: chiaLeaf,
+    title: 'Download Chia',
+    description: `Get chia and start farming`,
+    clickLink: `https://www.chia.net/`,
   },
 ];
 
-const Services = () => {
+const Chia = () => {
   return (
-    <Box as="section" id="services" sx={styles.section}>
+    <Box as="section" id="chia" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Our Roadmap"
-          description="We have an extensive roadmap for the next 6 months to make indian pool one of the top cryptocurrency pool in the world."
+          title="Chia"
+          description="Chia is our first priority"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
@@ -48,7 +51,7 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Chia;
 
 const styles = {
   section: {

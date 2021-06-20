@@ -4,6 +4,10 @@ export default [
     label: 'Home',
   },
   {
+    path: 'chia',
+    label: 'Chia',
+  },
+  {
     path: 'roadmap',
     label: 'Roadmap',
   },

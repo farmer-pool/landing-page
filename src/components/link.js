@@ -40,6 +40,16 @@ export function LearnMore({ path, label, children, ...rest }) {
   );
 }
 
+export function ClickHere({ path, label, children, ...rest }) {
+  return (
+    <a target="_blank" href={path} rel="noopener noreferrer">
+      <A sx={styles.learnMore} {...rest}>
+        {label ?? 'Click Here'} <HiOutlineChevronRight />
+      </A>
+    </a>
+  );
+}
+
 const styles = {
   learnMore: {
     color: 'link',

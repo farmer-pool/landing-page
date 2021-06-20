@@ -12,6 +12,7 @@ import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
+import Chia from '../sections/chia';
 
 export default function IndexPage() {
   return (
@@ -22,6 +23,7 @@ export default function IndexPage() {
           description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
         />
         <Banner />
+        <Chia/>
         <RoadMap/>
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
