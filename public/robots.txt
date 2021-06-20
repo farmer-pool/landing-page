@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://startup-agency.vercel.app
+Host: https://indianpool.org
 
 # Sitemaps
-Sitemap: https://startup-agency.vercel.app/sitemap.xml
+Sitemap: https://indianpool.org/sitemap.xml

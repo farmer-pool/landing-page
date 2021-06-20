@@ -10,21 +10,20 @@ import tabImage1 from 'assets/images/tab-illustration-1.png';
 const data = [
   {
     id: 1,
-    tabTitle: 'Why you choose our service?',
+    tabTitle: 'Why choose Indian Pool?',
     title: `We will turn your idea in the successful business model framework`,
     description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
     moreLink: '#explore-more',
     image: tabImage1,
     list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
+      'Faster speeds',
+      'Low Fees',
+      'India based servers'
     ],
   },
   {
     id: 2,
-    tabTitle: 'What’s our business promise?',
+    tabTitle: 'Who are we?',
     title: `We will turn your idea in the successful business model framework`,
     description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
     moreLink: '#explore-more',
@@ -64,9 +63,9 @@ const WhyUs = () => {
             >
               <Box>
                 <Heading>{item.title}</Heading>
-                <Text as="p" sx={styles.description}>
+                {/* <Text as="p" sx={styles.description}>
                   {item.description}
-                </Text>
+                </Text> */}
                 <Box sx={styles.list}>
                   {item.list.map((item, i) => (
                     <Box key={i} className="list-item">
@@ -79,9 +78,9 @@ const WhyUs = () => {
                     </Box>
                   ))}
                 </Box>
-                <Box sx={styles.learnMore}>
+                {/* <Box sx={styles.learnMore}>
                   <LearnMore path={item.moreLink} label="Explore more" />
-                </Box>
+                </Box> */}
               </Box>
               <Box sx={styles.illustration}>
                 <Image src={item.image} alt="illustration" />
@@ -170,7 +169,7 @@ const styles = {
     mt: [5],
     display: 'grid',
     justifyContent: ['center', null, null, 'unset'],
-    gridTemplateColumns: ['repeat(2, 164px)', null, null, 'repeat(2, 180px)'],
+    gridTemplateColumns: ['repeat(1, 164px)', null, null, 'repeat(1, 180px)'],
   },
   learnMore: {
     mt: [4],

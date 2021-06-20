@@ -20,7 +20,7 @@ const SubscribeUs = () => {
   }, [checked]);
 
   return (
-    <Box as="section" sx={styles.section} variant="section.subscribe">
+    <Box as="section" id="subscribe-us" sx={styles.section} variant="section.subscribe">
       <Container>
         <Box sx={styles.contentWrapper}>
           <SectionHeading

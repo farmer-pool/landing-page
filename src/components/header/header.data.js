@@ -5,22 +5,22 @@ export default [
   },
   {
     path: 'services',
-    label: 'Services',
+    label: 'Roadmap',
   },
-  {
-    path: 'team',
-    label: 'Team',
-  },
+  // {
+  //   path: 'team',
+  //   label: 'Team',
+  // },
   {
     path: 'why-us',
     label: 'Why Us',
   },
+  // {
+  //   path: 'blog',
+  //   label: 'Blog',
+  // },
   {
-    path: 'blog',
-    label: 'Blog',
-  },
-  {
-    path: 'login',
-    label: 'Login',
+    path: 'subscribe-us',
+    label: 'Subscribe Us',
   },
 ];

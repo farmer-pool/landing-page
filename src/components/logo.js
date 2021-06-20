@@ -1,13 +1,15 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { jsx, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
-import LogoSvg from 'components/icons/logo';
+import logo from 'assets/images/logo.png';
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <LogoSvg />
+      {/* <LogoSvg /> */}
+      <Image  style={{height: 32}} src={logo} alt="logo" />
+      <Text>INDIAN POOL</Text>
     </Link>
   );
 }

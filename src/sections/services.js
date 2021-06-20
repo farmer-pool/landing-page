@@ -5,27 +5,27 @@ import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
 import icon1 from 'assets/images/icons/service1.png';
-import icon2 from 'assets/images/icons/service2.png';
-import icon3 from 'assets/images/icons/service3.png';
+import icon2 from 'assets/images/icons/chia_logo.svg';
+import icon3 from 'assets/images/icons/service2.png';
 
 const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'Marketing & advertising',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Chia Testnet',
+    description: `We are working day and night on chia testnet to develop chia pool based on official chia protocol.`,
   },
   {
     id: 3,
     icon: icon2,
-    title: 'Ultimate development',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Chia Pool',
+    description: `Chia Pool to Go Live by 1st July 2021`,
   },
   {
     id: 4,
     icon: icon3,
-    title: 'Business Enterprise',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Support of other PoS Cryptocurrencies',
+    description: `We are planning to provide support of other Proof of Space based cryto like Flax and others`,
   },
 ];
 
@@ -35,8 +35,8 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Grow your startup with our Service"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          title="Our Roadmap"
+          description="We have an extensive roadmap for the next 6 months to make indian pool one of the top cryptocurrency pool in the world."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (

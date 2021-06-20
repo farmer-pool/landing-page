@@ -21,11 +21,11 @@ export default function IndexPage() {
         />
         <Banner />
         <Services />
-        <Testimonials />
-        <OurTeam />
-        <OtherServices />
+        {/* <Testimonials /> */}
+        {/* <OurTeam /> */}
+        {/* <OtherServices /> */}
         <WhyUs />
-        <Blog />
+        {/* <Blog /> */}
         <SubscribeUs />
       </Layout>
     </ThemeProvider>
