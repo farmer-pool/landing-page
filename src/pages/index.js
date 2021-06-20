@@ -10,6 +10,7 @@ import OtherServices from 'sections/other-services';
 import WhyUs from 'sections/why-us';
 import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
+import RoadMap from 'sections/roadmap';
 
 export default function IndexPage() {
   return (
@@ -20,7 +21,8 @@ export default function IndexPage() {
           description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
         />
         <Banner />
-        <Services />
+        <RoadMap/>
+        {/* <Services /> */}
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
         {/* <OtherServices /> */}

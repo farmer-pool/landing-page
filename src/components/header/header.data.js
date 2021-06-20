@@ -4,7 +4,7 @@ export default [
     label: 'Home',
   },
   {
-    path: 'services',
+    path: 'roadmap',
     label: 'Roadmap',
   },
   // {
@@ -21,6 +21,6 @@ export default [
   // },
   {
     path: 'subscribe-us',
-    label: 'Subscribe Us',
+    label: 'Connect',
   },
 ];

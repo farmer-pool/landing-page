@@ -1,11 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { useState, useCallback } from 'react';
-import { jsx, Box, Container, Button, Flex, Checkbox, Label } from 'theme-ui';
+import { jsx, Box, Container, Link, Image } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
-import Input from 'components/input';
 import illustration from 'assets/images/subscribe-bg.png';
+import discord from 'assets/images/icons/discord.png';
+import twitter from 'assets/images/icons/twitter.png';
 
 const SubscribeUs = () => {
   const [checked, setChecked] = useState(false);
@@ -19,45 +20,38 @@ const SubscribeUs = () => {
     setChecked(!checked);
   }, [checked]);
 
+  const data = [
+    {
+      path: '#!',
+      icon: twitter,
+      label: 'Twitter',
+      height: 24
+    },
+    {
+      path: '#!',
+      icon: discord,
+      label: 'Discord',
+      height: 18
+    }
+  ]
+
   return (
     <Box as="section" id="subscribe-us" sx={styles.section} variant="section.subscribe">
       <Container>
         <Box sx={styles.contentWrapper}>
           <SectionHeading
             sx={styles.heading}
-            title="Like our service? Subscribe us"
-            description="We have more than thousand of creative entrepreneurs and stat joining our business"
+            title="Connect with us"
+            description=""
           />
-          <Box as="form" sx={styles.subscribe} onSubmit={handleSubmit}>
-            <Flex sx={styles.inputGroup}>
-              <Label htmlFor="email" variant="styles.srOnly">
-                Email
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                className="email-input"
-                placeholder="Enter Email address"
-              />
-              <Button variant="secondary">Subscribe</Button>
-            </Flex>
-            <Box sx={styles.checkbox}>
-              <Label htmlFor="no_spam" className={checked ? 'checked' : ''}>
-                <Checkbox
-                  id="no_spam"
-                  onChange={handleCheckbox}
-                  defaultChecked={checked}
-                />
-                Don’t provide any promotional message.
-              </Label>
-              {/* <Checkbox
-                id="no_spam"
-                checked={checked}
-                onChange={handleCheckbox}
-                label="Don’t provide any promotional message."
-              /> */}
-            </Box>
-          </Box>
+          <ul>
+          {data.map(({ path, label, icon, height }, i) => (
+          <li key={i}>
+            {icon && <Image src={icon} style={{height: height}} alt={label} />}
+            <Link path={path} key={i} label={label} variant="footer"/>
+          </li>
+        ))}
+        </ul>
         </Box>
       </Container>
     </Box>
@@ -114,6 +108,21 @@ const styles = {
   },
   inputGroup: {
     flexDirection: ['column', null, null, 'row'],
+  },
+  ul: {
+    listStyle: 'none',
+    margin: '28px 0 0',
+    padding: 0,
+    li: {
+      display: 'flex',
+      alignItems: 'center',
+      img: {
+        mr: '15px',
+      },
+    },
+    a: {
+      color: rgba('#02073E', 0.8),
+    },
   },
   checkbox: {
     mt: ['24px'],

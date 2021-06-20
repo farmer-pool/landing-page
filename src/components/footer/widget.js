@@ -9,9 +9,9 @@ const Widget = ({ title, items }) => {
     <Box sx={styles.footerWidget}>
       <Heading as="h4">{title}</Heading>
       <ul>
-        {items.map(({ path, label, icon }, i) => (
+        {items.map(({ path, label, icon, height }, i) => (
           <li key={i}>
-            {icon && <Image src={icon} alt={label} />}
+            {icon && <Image src={icon} style={{height: height}} alt={label} />}
             <Link path={path} key={i} label={label} variant="footer" />
           </li>
         ))}

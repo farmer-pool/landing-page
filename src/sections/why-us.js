@@ -6,15 +6,16 @@ import { RiCheckboxCircleFill } from 'react-icons/ri';
 import { rgba } from 'polished';
 import { LearnMore } from 'components/link';
 import tabImage1 from 'assets/images/tab-illustration-1.png';
+import whyUsImage1 from 'assets/images/countdown.png';
 
 const data = [
   {
     id: 1,
     tabTitle: 'Why choose Indian Pool?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
+    title: ``,
+    description: ``,
     moreLink: '#explore-more',
-    image: tabImage1,
+    image: whyUsImage1,
     list: [
       'Faster speeds',
       'Low Fees',
@@ -24,15 +25,15 @@ const data = [
   {
     id: 2,
     tabTitle: 'Who are we?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
+    title: `A group of Indians who want to provide india with the best pools for Cryptocurrency mining`,
+    description: `Some description`,
     moreLink: '#explore-more',
     image: tabImage1,
     list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
+      'Point 1',
+      'Point 2',
+      'Point 3',
+      'Point 4',
     ],
   },
   {

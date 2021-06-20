@@ -7,7 +7,7 @@ import Service from 'components/cards/service';
 import icon1 from 'assets/images/icons/service1.png';
 import icon2 from 'assets/images/icons/service2.png';
 import icon3 from 'assets/images/icons/service3.png';
-import illustration from 'assets/images/banner-illustration.png';
+import illustration from 'assets/images/banner-crypto.png';
 
 const data = [
   {
