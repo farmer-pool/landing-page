@@ -11,24 +11,25 @@ import WhyUs from 'sections/why-us';
 import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
+import Connect from 'sections/connect-us';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Startup agency landing template"
-          description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
+          title="Indian Pool"
+          description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
         />
         <Banner />
         <RoadMap/>
-        {/* <Services /> */}
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
         {/* <OtherServices /> */}
         <WhyUs />
         {/* <Blog /> */}
-        <SubscribeUs />
+        {/* <SubscribeUs /> */}
+        <Connect />
       </Layout>
     </ThemeProvider>
   );

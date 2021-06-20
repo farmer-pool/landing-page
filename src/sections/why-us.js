@@ -7,47 +7,44 @@ import { rgba } from 'polished';
 import { LearnMore } from 'components/link';
 import tabImage1 from 'assets/images/tab-illustration-1.png';
 import whyUsImage1 from 'assets/images/countdown.png';
+import whoAreWe from 'assets/images/who-are-we.png';
 
 const data = [
   {
     id: 1,
     tabTitle: 'Why choose Indian Pool?',
-    title: ``,
-    description: ``,
+    title: 'India based servers for better rewards',
+    description: '' ,
     moreLink: '#explore-more',
     image: whyUsImage1,
     list: [
-      'Faster speeds',
-      'Low Fees',
-      'India based servers'
+      'Faster speeds, Low Fees',
+      'Highly transparent & secure',
+      'Hindi/English Support'
     ],
   },
   {
     id: 2,
     tabTitle: 'Who are we?',
-    title: `A group of Indians who want to provide india with the best pools for Cryptocurrency mining`,
-    description: `Some description`,
+    title: `A group of Indians who want to provide india with the best Cryptocurrency pools`,
+    description: ``,
     moreLink: '#explore-more',
-    image: tabImage1,
+    image: whoAreWe,
     list: [
-      'Point 1',
-      'Point 2',
-      'Point 3',
-      'Point 4',
+      'Experienced Developers',
+      'Blockchain Enthusiasts'
     ],
   },
   {
     id: 3,
-    tabTitle: 'What’s our role model plan?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
+    tabTitle: 'What’s our plan?',
+    title: `Simplify cryptocurrency mining to a level where anyone can mine cryptocurrency`,
+    description: ``,
     moreLink: '#explore-more',
     image: tabImage1,
     list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
+      'Unleash Decentralization',
+      'True Democracy',
     ],
   },
 ];
@@ -64,9 +61,9 @@ const WhyUs = () => {
             >
               <Box>
                 <Heading>{item.title}</Heading>
-                {/* <Text as="p" sx={styles.description}>
+                <Text as="p" sx={styles.description}>
                   {item.description}
-                </Text> */}
+                </Text>
                 <Box sx={styles.list}>
                   {item.list.map((item, i) => (
                     <Box key={i} className="list-item">
@@ -139,7 +136,7 @@ const styles = {
       flexDirection: ['column-reverse', null, null, 'unset'],
       alignItems: 'center',
       justifyContent: 'center',
-      gridTemplateColumns: [null, null, null, '0.9fr 1.1fr'],
+      gridTemplateColumns: [null, null, null, '1.1fr 0.9fr'],
       outline: 0,
       gap: [5, null, null, 11],
       h2: {
@@ -170,7 +167,7 @@ const styles = {
     mt: [5],
     display: 'grid',
     justifyContent: ['center', null, null, 'unset'],
-    gridTemplateColumns: ['repeat(1, 164px)', null, null, 'repeat(1, 180px)'],
+    gridTemplateColumns: ['repeat(1, 196px)', null, null, 'repeat(1,300px)'],
   },
   learnMore: {
     mt: [4],
@@ -186,6 +183,7 @@ const styles = {
     textAlign: [null, null, null, null, null, 'center'],
     img: {
       maxWidth: ['65%', null, null, '100%', null, '90%', '100%'],
+      maxHeight: ['320px', null, null, '320px', null, '320px', '320px'],
     },
   },
 };

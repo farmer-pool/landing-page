@@ -20,7 +20,7 @@ export default [
   //   label: 'Blog',
   // },
   {
-    path: 'subscribe-us',
+    path: 'connect',
     label: 'Connect',
   },
 ];

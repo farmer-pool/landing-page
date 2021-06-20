@@ -13,7 +13,7 @@ const ROAD_MAP_DATA = {
       date: '15 June 2021',
       title: 'Chia Testnet',
       text:
-        'We are working day and night on chia testnet to develop chia pool based on official chia protocol.',
+        'Working day and night on chia testnet to develop chia pool based on official chia protocol.',
     },
     {
       date: '1 July 2021',
@@ -25,7 +25,7 @@ const ROAD_MAP_DATA = {
       date: '31 October 2021',
       title: 'Support of other PoS Cryptocurrencies',
       text:
-        'We are planning to provide support of other Proof of Space based cryto like Flax and others',
+        'Support of other Proof of Space based cryto like Flax and others (storj, filecoin)',
     },
   ],
 };
