@@ -49,16 +49,16 @@ export const menuItems = [
     title: 'Connect',
     items: [
       {
-        path: '#!',
+        path: 'https://twitter.com/PoolIndian',
         icon: twitter,
         label: 'Twitter',
         height: 24
       },
       {
-        path: '#!',
+        path: 'https://discord.gg/JezADP9a',
         icon: discord,
         label: 'Discord',
-        height: 18
+        height: 24
       },
     ],
   },

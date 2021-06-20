@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Flex, Heading, Text, Image, Link } from 'theme-ui';
 import line from 'assets/images/roadmap-line.svg';
+import { rgba } from 'polished';
 
 const ROAD_MAP_DATA = {
   blockTitle: {
@@ -70,6 +71,7 @@ const styles = {
   section: {
     mb: ['63px', '75px', null, '90px', '110px', null, '140px'],
     position: 'relative',
+    backgroundColor: rgba('#FFF5ED', 0.5),
   },
   shapeLine: {
     width: '100%',

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { useState, useCallback } from 'react';
-import { jsx, Box, Container, Link, Image } from 'theme-ui';
+import { jsx, Box, Container, Image } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import illustration from 'assets/images/subscribe-bg.png';
@@ -22,17 +22,23 @@ const SubscribeUs = () => {
 
   const data = [
     {
-      path: '#!',
+      path: 'https://twitter.com/PoolIndian',
       icon: twitter,
-      label: 'Twitter',
-      height: 24
+      label: '@PoolIndian',
+      height: 32
     },
     {
-      path: '#!',
+      path: 'https://discord.gg/JezADP9a',
       icon: discord,
       label: 'Discord',
-      height: 18
-    }
+      height: 32
+    },
+    // {
+    //   path: '#!',
+    //   icon: github,
+    //   label: 'Github',
+    //   height: 28
+    // }
   ]
 
   return (
@@ -45,13 +51,15 @@ const SubscribeUs = () => {
             description=""
           />
           <ul>
-          {data.map(({ path, label, icon, height }, i) => (
-          <li key={i}>
-            {icon && <Image src={icon} style={{height: height}} alt={label} />}
-            <Link path={path} key={i} label={label} variant="footer"/>
-          </li>
-        ))}
-        </ul>
+            {data.map(({ path, label, icon, height }, i) => (
+              <li key={i}>
+                <a target="_blank" href={path} rel="noopener noreferrer">
+                {icon && <Image src={icon} style={{ height: height }} alt={label} />}
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </Box>
       </Container>
     </Box>
@@ -72,13 +80,33 @@ const styles = {
     pb: [8, null, null, 9, 11],
   },
   contentWrapper: {
-    backgroundColor: '#fff',
+    backgroundColor: '#F9FAFC',
+    //backgroundColor: '#fff',
     borderRadius: 15,
     p: [null, null, null, '40px 110px 50px', '50px 50px', '40px'],
     gap: '50px',
     display: ['block', null, 'grid', 'block', 'grid'],
     alignItems: 'center',
     gridTemplateColumns: ['repeat(2, 1fr)'],
+    ul: {
+      listStyle: 'none',
+      margin: '28px 0 0',
+      padding: 0,
+      li: {
+        display: 'flex',
+        alignItems: 'center',
+        padding: 2,
+        img: {
+          mr: '15px',
+        },
+        a: {
+          color: rgba('#02073E', 0.8),
+        },
+      },
+      a: {
+        color: rgba('#02073E', 0.8),
+      },
+    },
   },
   heading: {
     textAlign: ['center', null, 'left', 'center', 'left'],
@@ -108,21 +136,6 @@ const styles = {
   },
   inputGroup: {
     flexDirection: ['column', null, null, 'row'],
-  },
-  ul: {
-    listStyle: 'none',
-    margin: '28px 0 0',
-    padding: 0,
-    li: {
-      display: 'flex',
-      alignItems: 'center',
-      img: {
-        mr: '15px',
-      },
-    },
-    a: {
-      color: rgba('#02073E', 0.8),
-    },
   },
   checkbox: {
     mt: ['24px'],
