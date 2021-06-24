@@ -17,7 +17,7 @@ const data = [
   {
     id: 2,
     icon: discord,
-    path: 'https://discord.gg/FUjAqE4CNQ',
+    path: 'https://discord.gg/xNMZhRMGZN',
   },
   {
     id: 3,
