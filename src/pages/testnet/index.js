@@ -13,7 +13,7 @@ import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
 import ChiaData from 'sections/chiadata';
-import ShowData from 'components/table'
+import ShowData from 'sections/table'
 
 export default function IndexPage() {
   return (
@@ -23,7 +23,6 @@ export default function IndexPage() {
           title="Indian Pool"
           description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
         />
-        <Banner />
         <ChiaData />
         <ShowData/>
         {/* <RoadMap/> */}

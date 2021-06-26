@@ -1,9 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
+import { jsx, Box, Container, Image, Heading, Text} from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import ServiceData from 'components/cards/service-data';
+import miner from 'assets/images/miner.png';
 import chiaLogo from 'assets/images/icons/chia-logo.png';
 import chiaCalc from 'assets/images/icons/chia-calc.png';
 import chiaLeaf from 'assets/images/icons/chia-leaf.png';
@@ -42,17 +43,23 @@ const data = [
 
 const ChiaData = () => {
   return (
-    <Box as="section" id="chiadata" sx={styles.section}>
+    <Box as="section" id="chia" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Welcome to Space Pool"
+          title="Chia"
           description="Chia is our first priority"
         />
+        <Box as="figure" sx={styles.illustration}>
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
             <ServiceData key={item.id} item={item} />
           ))}
+        </Box>
+            {/* <Box sx={styles.buttonWrapper}>
+              <Button>Get Started</Button>
+            </Box> */}
+            <Image src={miner} alt="miner" />
         </Box>
       </Container>
     </Box>
@@ -68,18 +75,26 @@ const styles = {
     pb: [7, 7, 7, 9, 9, 10, 11],
   },
   heading: {
+    left : '50%',
     maxWidth: [null, null, null, 455, 660],
     mb: [6, null, null, 8, null, 9, 13],
+  },
+  illustration: {
+    display: ['block', null, null, 'flex'],
+    position: 'relative',
+    img: {
+      display: ['none', null, null, 'block'],
+      maxWidth: ['90%'],
+      m: ['0 auto'],
+    }
   },
   contentWrapper: {
     gap: 20,
     display: 'grid',
     justifyContent: ['center', null, null, 'unset'],
-    gridTemplateColumns: [
-      'repeat(1, 285px)',
-      'repeat(2, 285px)',
-      'repeat(3, 285px)',
-      'repeat(4, 285px)',
+    gridTemplate: [
+      'repeat(1, 285px) repeat(2, 285px)',
+      'repeat(3, 285px) repeat(4, 285px)',
     ],
   },
 };
