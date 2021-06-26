@@ -3,7 +3,7 @@
 import { jsx, Box, Container } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
-import Service from 'components/cards/service';
+import ServiceData from 'components/cards/service-data';
 import chiaLogo from 'assets/images/icons/chia-logo.png';
 import chiaCalc from 'assets/images/icons/chia-calc.png';
 import chiaLeaf from 'assets/images/icons/chia-leaf.png';
@@ -51,7 +51,7 @@ const ChiaData = () => {
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
-            <Service key={item.id} item={item} />
+            <ServiceData key={item.id} item={item} />
           ))}
         </Box>
       </Container>

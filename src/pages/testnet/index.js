@@ -13,6 +13,7 @@ import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
 import ChiaData from 'sections/chiadata';
+import ShowData from 'components/table'
 
 export default function IndexPage() {
   return (
@@ -24,6 +25,7 @@ export default function IndexPage() {
         />
         <Banner />
         <ChiaData />
+        <ShowData/>
         {/* <RoadMap/> */}
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
