@@ -25,7 +25,20 @@
     "react-stickynode": "^3.0.4",
     "reactstrap": "^8.9.0",
     "swiper": "^6.4.5",
-    "theme-ui": "^0.3.5"
+    "theme-ui": "^0.3.5",
+    "@material-ui/core": "4.11.3",
+    "@material-ui/icons": "4.11.2",
+    "@zeit/next-css": "1.0.1",
+    "@zeit/next-sass": "1.0.1",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "history": "5.0.0",
+    "next-images": "1.3.1",
+    "path": "0.12.7",
+    "perfect-scrollbar": "1.5.0",
+    "prop-types": "15.7.2",
+    "react-chartist": "0.14.3",
+    "react-swipeable-views": "0.13.9"
   },
   "devDependencies": {
     "imagemin-mozjpeg": "^9.0.0",
