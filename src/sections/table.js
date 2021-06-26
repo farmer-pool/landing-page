@@ -1,4 +1,5 @@
 import React from "react";
+import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
@@ -8,6 +9,7 @@ import Table from "components/Table/Table.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import ChiaLeaf from "assets/images/icons/chia-leaf.png";
 
 const styles = {
   cardCategoryWhite: {
@@ -23,10 +25,13 @@ const styles = {
     },
   },
   cardTitleWhite: {
-    color: "#FFFFFF",
+    color: "heading",
     marginTop: "0px",
-    minHeight: "auto",
-    fontWeight: "300",
+    // marginLeft: "0.rem",
+    textAlign: "left",
+    fontSize: "2.5rem",
+    letterSpacing: "0.2rem",
+    fontWeight: "100",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
     marginBottom: "3px",
     textDecoration: "none",
@@ -37,59 +42,127 @@ const styles = {
       lineHeight: "1",
     },
   },
+  container: {
+    zIndex: "-1",
+  },
+  title: {
+    backgroundColor: "transparent",
+    display: "flex",
+  },
+  tableHead: {
+    fontWeight: "400",
+    color: "black",
+    fontSize: "1.5rem",
+  },
+  tableData: {
+    fontSize: "1rem",
+    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+  },
+  container: {
+    display: "grid",
+    placeItems: "center",
+  },
 };
-
 
 const ShowData = () => {
   const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
-    <GridContainer>
+    <GridContainer style={styles.container}>
       <GridItem xs={12} sm={12} md={12}>
         <Card>
-          <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
+          <CardHeader style={styles.title}>
+            <Image src={ChiaLeaf} alt="leaf" style={styles.container} />
+            <h4 className={classes.cardTitleWhite}>Recently Farmed Chia</h4>
           </CardHeader>
           <CardBody>
             <Table
-              tableHeaderColor="primary"
-              tableHead={["Block #", "Header Hash", "Farm", "Luck", "Date", "Reward"]}
+              tableHeaderStyle={styles.tableHead}
+              tableDataStyle={styles.tableData}
+              tableHead={[
+                "Block #",
+                "Header Hash",
+                "Farm",
+                "Luck",
+                "Date",
+                "Reward",
+              ]}
               tableData={[
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-                ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
+                [
+                  "10186",
+                  "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b",
+                  "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa",
+                  "5.7",
+                  "30 minutes ago",
+                  "1.75 XCH",
+                ],
               ]}
             />
           </CardBody>
         </Card>
       </GridItem>
     </GridContainer>
-  //   <GridContainer>
-  //   <GridItem>
-  //     <Card>
-  //       <CardBody>
-  //           <Table
-  //             tableHeaderColor="warning"
-  //             tableHead={["Block #", "Header Hash", "Farm", "Luck", "Date", "Reward"]}
-  //             tableData={[
-  //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-  //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-  //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-  //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
-  //             ]}
-  //           />
-  //       </CardBody>
-  //     </Card>
-  //   </GridItem>
-  // </GridContainer>
-    );
-    {/* // <Col className="mb-5 mb-xl-0" xl="8">
+    //   <GridContainer>
+    //   <GridItem>
+    //     <Card>
+    //       <CardBody>
+    //           <Table
+    //             tableHeaderColor="warning"
+    //             tableHead={["Block #", "Header Hash", "Farm", "Luck", "Date", "Reward"]}
+    //             tableData={[
+    //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
+    //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
+    //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
+    //               ["10186", "34ddd6eb452c69894371322ca59bcbd5de22f03e87533a850480e4a8121d9d4b", "a8175a93c628246e649c75558288a0502fdead730b91e66ebbbee4a0b949b4fa", "5.7", "30 minutes ago", "1.75 XCH"],
+    //             ]}
+    //           />
+    //       </CardBody>
+    //     </Card>
+    //   </GridItem>
+    // </GridContainer>
+  );
+  {
+    /* // <Col className="mb-5 mb-xl-0" xl="8">
     //   <Card className="shadow">
     //     <CardHeader className="border-0">
     //       <Row className="align-items-center">
@@ -174,8 +247,8 @@ const ShowData = () => {
     //       </tbody>
     //     </Table>
     //   </Card>
-    // </Col> */}
-   
+    // </Col> */
+  }
 };
 
 export default ShowData;

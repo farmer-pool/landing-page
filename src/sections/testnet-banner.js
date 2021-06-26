@@ -40,13 +40,13 @@ const data = [
   },
 ];
 
-const ChiaData = () => {
+const TestNetBanner = () => {
   return (
     <Box as="section" id="chia" sx={styles.section}>
       <SectionHeading
         sx={styles.heading}
-        title="Chia"
-        description="Chia is our first priority"
+        title="Indian Pool"
+        description="Join forces to take back control of predictable Chia farming winnings"
       />
       <Box as="figure" sx={styles.illustration}>
         <Box sx={styles.contentWrapper}>
@@ -63,7 +63,7 @@ const ChiaData = () => {
   );
 };
 
-export default ChiaData;
+export default TestNetBanner;
 
 const styles = {
   section: {
@@ -75,7 +75,7 @@ const styles = {
   heading: {
     left: "50%",
     gridRow: "1 / span 1",
-    maxWidth: [null, null, null, 455, 660],
+    // maxWidth: [null, null, null, 455, 660],
   },
   illustration: {
     display: ["block", null, null, "flex"],

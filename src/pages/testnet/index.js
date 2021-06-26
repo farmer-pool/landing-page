@@ -12,7 +12,7 @@ import SubscribeUs from 'sections/subscribe-us';
 import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
-import ChiaData from 'sections/chiadata';
+import TestNetBanner from 'sections/testnet-banner';
 import ShowData from 'sections/table'
 
 export default function IndexPage() {
@@ -23,7 +23,8 @@ export default function IndexPage() {
           title="Indian Pool"
           description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
         />
-        <ChiaData />
+        <TestNetBanner />
+        <br/>
         <ShowData/>
         {/* <RoadMap/> */}
         {/* <Testimonials /> */}
@@ -32,7 +33,6 @@ export default function IndexPage() {
         {/* <WhyUs /> */}
         {/* <Blog /> */}
         {/* <SubscribeUs /> */}
-        <Connect />
       </Layout>
     </ThemeProvider>
   );

@@ -54,7 +54,7 @@ const tableStyle = (theme) => ({
     fontSize: "0.8125rem",
   },
   tableResponsive: {
-    width: "100%",
+    width: "90vw",
     marginTop: theme.spacing(3),
     overflowX: "auto",
   },

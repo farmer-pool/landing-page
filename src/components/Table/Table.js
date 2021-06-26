@@ -13,12 +13,15 @@ import styles from "assets/jss/nextjs-material-dashboard/components/tableStyle.j
 export default function CustomTable(props) {
   const useStyles = makeStyles(styles);
   const classes = useStyles();
-  const { tableHead, tableData, tableHeaderColor } = props;
+  const { tableHead, tableData, tableHeaderStyle, tableDataStyle } = props;
   return (
     <div className={classes.tableResponsive}>
       <Table className={classes.table}>
         {tableHead !== undefined ? (
-          <TableHead className={classes[tableHeaderColor + "TableHeader"]}>
+          <TableHead
+            style={tableHeaderStyle}
+            className={classes["TableHeader"]}
+          >
             <TableRow className={classes.tableHeadRow}>
               {tableHead.map((prop, key) => {
                 return (
@@ -39,7 +42,11 @@ export default function CustomTable(props) {
               <TableRow key={key} className={classes.tableBodyRow}>
                 {prop.map((prop, key) => {
                   return (
-                    <TableCell className={classes.tableCell} key={key}>
+                    <TableCell
+                      className={classes.tableCell}
+                      key={key}
+                      style={tableDataStyle}
+                    >
                       {prop}
                     </TableCell>
                   );
