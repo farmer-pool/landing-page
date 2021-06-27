@@ -13,7 +13,8 @@ import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
 import TestNetBanner from 'sections/testnet-banner';
-import ShowData from 'sections/table'
+import ShowData from 'sections/table';
+import SearchBar from 'sections/search-bar';
 
 export default function IndexPage() {
   return (
@@ -24,6 +25,8 @@ export default function IndexPage() {
           description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
         />
         <TestNetBanner />
+        <br/>
+        <SearchBar />
         <br/>
         <ShowData/>
         {/* <RoadMap/> */}
