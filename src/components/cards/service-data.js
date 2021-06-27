@@ -7,12 +7,12 @@ const ServiceData = ({ item }) => {
   return (
     <Box sx={styles.serviceItem}>
       <Box as="figure" sx={styles.figure}>
-      </Box>
+    </Box>
       <Box sx={styles.content}>
         <Heading as="h3">{item?.title}</Heading>
         <Text as="p">{item?.description}</Text>
-        {item?.moreLink && <LearnMore path={item?.moreLink} />}
-        {item?.clickLink && <ClickHere path={item?.clickLink} />}
+        {/* {item?.moreLink && <LearnMore path={item?.moreLink} />}
+        {item?.clickLink && <ClickHere path={item?.clickLink} />} */}
       </Box>
     </Box>
   );
@@ -42,7 +42,7 @@ const styles = {
       lineHeight: [1.68],
     },
     p: {
-      fontSize: [1, null, null, null, 2],
+      fontSize: [4, null, null, null, 12],
       lineHeight: [1.88],
       mt: [2],
     },

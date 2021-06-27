@@ -14,29 +14,22 @@ const data = [
   {
     id: 1,
     title: "Net Space",
-    description: `Get latest Chia price chart`,
-    clickLink: `https://coinmarketcap.com/currencies/chia-network/`,
+    description: `2.58 TiB`,
   },
   {
     id: 2,
-    data: 4,
     title: "Pool Space",
-    description: `How much can I earn farming Chia (XCH)?`,
-    clickLink: `https://chiacalculator.com/`,
+    description: `0.35 TiB`,
   },
   {
     id: 3,
-    data: 4,
     title: "forms online",
-    description: `Get chia and start farming`,
-    clickLink: `https://www.chia.net/`,
+    description: `8`,
   },
   {
     id: 4,
-    data: 4,
     title: "Time to Win",
-    description: `Get chia and start farming`,
-    clickLink: `https://www.chia.net/`,
+    description: `2 minutes`,
   },
 ];
 
