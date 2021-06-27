@@ -1,14 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
+import React from "react";
+import { jsx, Box, Image } from "theme-ui";
 import { rgba } from "polished";
 import SectionHeading from "components/section-heading";
 import ServiceData from "components/cards/service-data";
-import miner from "assets/images/miner.png";
 import farming from "assets/images/farming.png";
-import chiaLogo from "assets/images/icons/chia-logo.png";
-import chiaCalc from "assets/images/icons/chia-calc.png";
-import chiaLeaf from "assets/images/icons/chia-leaf.png";
+import { useMediaQuery } from "react-responsive";
 
 const data = [
   {
@@ -34,6 +32,9 @@ const data = [
 ];
 
 const TestNetBanner = () => {
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 900px)",
+  });
   return (
     <Box as="section" id="chia" sx={styles.section}>
       <SectionHeading
@@ -41,17 +42,16 @@ const TestNetBanner = () => {
         title="Indian Pool"
         description="Join forces to take back control of predictable Chia farming winnings"
       />
-      <Box as="figure" sx={styles.illustration}>
-        <Box sx={styles.contentWrapper}>
-          {data?.map((item) => (
-            <ServiceData key={item.id} item={item} />
-          ))}
-        </Box>
-        {/* <Box sx={styles.buttonWrapper}>
-              <Button>Get Started</Button>
-            </Box> */}
-        <Image src={farming} alt="miner" />
+      <Box sx={styles.contentWrapper}>
+        {data?.map((item) => (
+          <ServiceData key={item.id} item={item} />
+        ))}
       </Box>
+      {!isTabletOrMobileDevice ? (
+        <Image src={farming} alt="miner" style={styles.headImage} />
+      ) : (
+        <></>
+      )}
     </Box>
   );
 };
@@ -62,27 +62,32 @@ const styles = {
   section: {
     display: "grid",
     backgroundColor: rgba("#FFF5ED", 0.5),
-    pt: [11, 11, 11, 12, 12, 12, 14],
-    // pb: [7, 7, 7, 9, 9, 10, 11],
+    pt: "13vh",
+    height: "",
+    placeItems: "center",
   },
   heading: {
     left: "50%",
-    gridRow: "1 / span 1",
+    gridRow: "1 / 2",
     // maxWidth: [null, null, null, 455, 660],
   },
-  illustration: {
-    display: ["block", null, null, "flex"],
-    position: "relative",
-    img: {
-      display: ["none", null, null, "block"],
-      maxWidth: ["100%"],
-      m: ["0 auto"],
-    },
-  },
   contentWrapper: {
+    gridRow: " 2 / 4",
+    gridColumn: "1 / 3",
     gap: 5,
     display: "grid",
-    justifyContent: ["center", null, null, "unset"],
-    gridTemplate: "285px / 20vw 20vw",
+    placeItems: "center",
+    gridTemplate: "150px / 15vw 15vw",
+  },
+  headImage: {
+    aspectRatio: "default",
+    height: "90%",
+    gridRow: "1 / 4",
+    gridColumn: "3 / 4",
+  },
+  "@media only screen and (max-width: 600px)": {
+    headImage: {
+      display: "none",
+    },
   },
 };

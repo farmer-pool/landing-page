@@ -38,11 +38,11 @@ const styles = {
       color: 'heading',
       fontWeight: 700,
       fontFamily: 'body',
-      fontSize: [2, null, null, 17, 3],
+      fontSize: "1rem",
       lineHeight: [1.68],
     },
     p: {
-      fontSize: [4, null, null, null, 12],
+      fontSize: "1.5rem",
       lineHeight: [1.88],
       mt: [2],
     },
