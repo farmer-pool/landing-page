@@ -29,7 +29,7 @@ const styles = {
     marginTop: "0px",
     // marginLeft: "0.rem",
     textAlign: "left",
-    fontSize: "2.5rem",
+    fontSize: "1.5rem",
     letterSpacing: "0.2rem",
     fontWeight: "100",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
@@ -52,16 +52,20 @@ const styles = {
   tableHead: {
     fontWeight: "400",
     color: "black",
-    fontSize: "1.5rem",
+    fontSize: "1rem",
   },
   tableData: {
-    fontSize: "1rem",
+    fontSize: "0.8rem",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
   },
   container: {
     display: "grid",
     placeItems: "center",
   },
+  headImage: {
+    aspectRatio: "default",
+    height: "7vh"
+  }
 };
 
 const ShowData = () => {
@@ -72,7 +76,7 @@ const ShowData = () => {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader style={styles.title}>
-            <Image src={ChiaLeaf} alt="leaf" style={styles.container} />
+            <Image src={ChiaLeaf} alt="leaf" style={styles.headImage} />
             <h4 className={classes.cardTitleWhite}>Recently Farmed Chia</h4>
           </CardHeader>
           <CardBody>

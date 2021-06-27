@@ -24,7 +24,7 @@ const styles = {
   title: {
     fontFamily: 'heading',
     fontWeight: 700,
-    fontSize: "4rem",
+    fontSize: "2.5rem",
     lineHeight: [1.33, 1.33, 1.48],
     letterSpacing: ['-0.5px', null, null, null, null, null, '-1px'],
     img: {
@@ -36,8 +36,6 @@ const styles = {
   description: {
     color: 'heading',
     fontSize: "1.5rem",
-    lineHeight: [1.58, 1.58, 1.58, 2.2],
     maxWidth: ['none', 'none', 'none', 'none', 490],
-    margin: '15px auto 0',
   },
 };
