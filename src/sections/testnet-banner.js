@@ -42,7 +42,7 @@ const TestNetBanner = () => {
         title="Indian Pool"
         description="Join forces to take back control of predictable Chia farming winnings"
       />
-      <Box sx={styles.contentWrapper}>
+      <Box sx={styles.dataShow}>
         {data?.map((item) => (
           <ServiceData key={item.id} item={item} />
         ))}
@@ -64,30 +64,23 @@ const styles = {
     backgroundColor: rgba("#FFF5ED", 0.5),
     pt: "13vh",
     height: "",
-    placeItems: "center",
+    justifyContent: "center",
   },
   heading: {
-    left: "50%",
-    gridRow: "1 / 2",
-    // maxWidth: [null, null, null, 455, 660],
+    gridColumn: "1 / 3",
   },
-  contentWrapper: {
+  dataShow: {
     gridRow: " 2 / 4",
     gridColumn: "1 / 3",
     gap: 5,
     display: "grid",
-    placeItems: "center",
-    gridTemplate: "150px / 15vw 15vw",
+    justifyContent: "center",
+    gridTemplate: "150px / repeat(2, minmax(20vw, 1fr))",
   },
   headImage: {
     aspectRatio: "default",
     height: "90%",
     gridRow: "1 / 4",
     gridColumn: "3 / 4",
-  },
-  "@media only screen and (max-width: 600px)": {
-    headImage: {
-      display: "none",
-    },
   },
 };
