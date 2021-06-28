@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     padding: '6px 12px',
     border: '1px solid',
-    lineHeight: 2.5,
+    lineHeight: 3,
     backgroundColor: '#3eac5c',
     borderColor: '#3eac5c',
     fontFamily: [
