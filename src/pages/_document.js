@@ -20,6 +20,7 @@ class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
             rel="stylesheet"
           />
+          <link href="https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=4CAF50" />
         </Head>
         <body>
           <Main />
