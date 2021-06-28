@@ -9,8 +9,8 @@ const ServiceData = ({ item }) => {
       <Box as="figure" sx={styles.figure}>
     </Box>
       <Box sx={styles.content}>
-        <Heading as="h3">{item?.title}</Heading>
         <Text as="p">{item?.description}</Text>
+        <Heading as="h3">{item?.title}</Heading>
         {/* {item?.moreLink && <LearnMore path={item?.moreLink} />}
         {item?.clickLink && <ClickHere path={item?.clickLink} />} */}
       </Box>

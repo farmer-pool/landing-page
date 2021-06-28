@@ -10,6 +10,9 @@ import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import ChiaLeaf from "assets/images/icons/chia-leaf.png";
+import Button from "@material-ui/core/Button";
+import animation from "assets/css/animation.module.css";
+
 
 const styles = {
   cardCategoryWhite: {
@@ -56,6 +59,7 @@ const styles = {
   },
   tableData: {
     fontSize: "0.8rem",
+    boxSizing: "border-box",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
   },
   container: {
@@ -65,7 +69,24 @@ const styles = {
   headImage: {
     aspectRatio: "default",
     height: "7vh"
-  }
+  },
+  loadButton: {
+    fontSize: "2rem",
+    minHeight: "4rem",
+    maxWidth: "20vw",
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
 };
 
 const ShowData = () => {
@@ -76,7 +97,7 @@ const ShowData = () => {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader style={styles.title}>
-            <Image src={ChiaLeaf} alt="leaf" style={styles.headImage} />
+          <Image src={ChiaLeaf} alt="leaf" style={styles.headImage} />
             <h4 className={classes.cardTitleWhite}>Recently Farmed Chia</h4>
           </CardHeader>
           <CardBody>
@@ -144,6 +165,13 @@ const ShowData = () => {
             />
           </CardBody>
         </Card>
+        </GridItem>
+      <GridItem>
+        <Button
+          variant="contained"
+          className={(classes.loadButton, animation["snip1417"])}
+          style={{color: 'white',background: ' #009b00'}}
+        >Load More</Button>
       </GridItem>
     </GridContainer>
     //   <GridContainer>

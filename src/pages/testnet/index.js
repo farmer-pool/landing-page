@@ -5,10 +5,13 @@ import Layout from 'components/layout';
 import TestNetBanner from 'sections/testnet-banner';
 import ShowData from 'sections/table';
 import SearchBar from 'sections/search-bar';
+import illustration from 'assets/images/banner-crypto.png';
+
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
+      <div style={{backgroundColor: "#fff7f1",}}>
       <Layout>
         <SEO
           title="Indian Pool"
@@ -16,9 +19,21 @@ export default function IndexPage() {
         />
         <TestNetBanner />
         <br/>
+        <div style={{
+            backgroundImage: `url(${illustration})` ,
+            backgroundRepeat:'no-repeat',
+            backgroundColor: "#fff7f1",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            width: `calc(100vw + 48px)`,
+            margin: -24,
+            padding: 24,
+            opacity: 0.6,
+        }}>
         <SearchBar />
         <br/>
         <ShowData/>
+        </div>
         {/* <RoadMap/> */}
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
@@ -27,6 +42,7 @@ export default function IndexPage() {
         {/* <Blog /> */}
         {/* <SubscribeUs /> */}
       </Layout>
+      </div>
     </ThemeProvider>
   );
 }
