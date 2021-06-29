@@ -7,6 +7,7 @@ import SectionHeading from "components/section-heading";
 import ServiceData from "components/cards/service-data";
 import farming from "assets/images/farming.png";
 import { useMediaQuery } from "react-responsive";
+import animation from "assets/css/animation.module.css";
 
 const data = [
   {
@@ -41,6 +42,7 @@ const TestNetBanner = () => {
         sx={styles.heading}
         title="Indian Pool"
         description="Join forces to take back control of predictable Chia farming winnings"
+        classes={animation["tracking-in-contract-bck"]}
       />
       <Box sx={styles.dataShow}>
         {data?.map((item) => (
