@@ -1,22 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Heading, Text } from "theme-ui";
-import animation from "assets/css/animation.module.css";
 
-const SectionHeading = ({ title, description, ...props }) => {
+const SectionHeading = ({ title, description, classes, ...props }) => {
   return (
     <Box sx={styles.heading} {...props}>
-      <Heading
-        sx={styles.title}
-        className={animation["tracking-in-contract-bck"]}
-      >
+      <Heading sx={styles.title} className={classes}>
         {title}
       </Heading>
-      <Text
-        as="p"
-        sx={styles.description}
-        className={animation["tracking-in-contract-bck"]}
-      >
+      <Text as="p" sx={styles.description} className={classes}>
         {description}
       </Text>
     </Box>
