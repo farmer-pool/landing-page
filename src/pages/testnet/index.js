@@ -28,7 +28,7 @@ export default function IndexPage() {
             width: `calc(100vw + 48px)`,
             margin: -24,
             padding: 24,
-            opacity: 0.6,
+            opacity: 0.9,
         }}>
         <SearchBar />
         <br/>

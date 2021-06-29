@@ -26,9 +26,9 @@ const useStyles = makeStyles((theme) => ({
     // pb: [7, 7, 7, 9, 9, 10, 11],
   },
   SearchField: {
-    width: "40vw",
+    width: "33vw",
     height: "2rem",
-    // border: ".1em solid black",
+    // "::placeholder": { color: "red" },
   },
 
   searchButton: {
@@ -63,18 +63,22 @@ export default function SearchBar() {
       style={{ minHeight: "1vh" }}
     >
       <Grid item>
-        <Input className={classes.SearchField} placeholder="  LauncherID"/>
+        <Input
+          className={classes.SearchField}
+          placeholder="  Launcher ID"
+          // style={{ color: "black", "::placeholder": { color: "red" } }}
+        />
       </Grid>
-      < Grid item>
+      <Grid item>
         <Button
           variant="contained"
           className={(classes.searchButton, animation["snip1417"])}
           startIcon={<SearchIcon />}
-          style={{color: 'white',background: ' #009b00'}}
+          style={{ color: "white", background: " #009b00" }}
         >
           Search
         </Button>
-      </ Grid>
+      </Grid>
     </Grid>
   );
 }
