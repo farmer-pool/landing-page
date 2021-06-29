@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Image, Text, Heading } from 'theme-ui';
-import { ClickHere } from 'components/link';
+import { jsx, Box, Text, Heading } from 'theme-ui';
 
 const ServiceData = ({ item }) => {
   return (

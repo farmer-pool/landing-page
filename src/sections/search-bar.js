@@ -1,18 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
 import Input from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import FormControl from "@material-ui/core/FormControl";
-import IconButton from "@material-ui/core/IconButton";
 import Grid from "@material-ui/core/Grid";
 import SearchIcon from "@material-ui/icons/Search";
-import KeyboardVoiceIcon from "@material-ui/icons/KeyboardVoice";
-import Icon from "@material-ui/core/Icon";
 
 import Button from "@material-ui/core/Button";
-import { CenterFocusStrong } from "@material-ui/icons";
 import animation from "assets/css/animation.module.css";
 
 const useStyles = makeStyles((theme) => ({

@@ -1,5 +1,5 @@
 import React from "react";
-import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
+import { Image } from "theme-ui";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
