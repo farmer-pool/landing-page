@@ -13,10 +13,8 @@ import Blog from "sections/blog";
 import RoadMap from "sections/roadmap";
 import Connect from "sections/connect-us";
 import Chia from "../sections/chia";
-const routes = require("next-routes")();
 
 export default function IndexPage() {
-  routes.add("home", "/", "index.js").add("testnet", "/testnet", "testnet");
   return (
     <ThemeProvider theme={theme}>
       <Layout>
