@@ -20,7 +20,9 @@ const data = [
     list: [
       'Faster speeds, Low Fees',
       'Highly transparent & secure',
-      'Hindi/English Support'
+      'Hindi/English Support',
+      'A team of IITians',
+      'Ex-Oracle, Qualcomm, Walmart'
     ],
   },
   {
@@ -32,7 +34,9 @@ const data = [
     image: whoAreWe,
     list: [
       'Experienced Developers',
-      'Blockchain Enthusiasts'
+      'Blockchain Enthusiasts',
+      'A team of IITians',
+      'Ex-Oracle, Intel, Walmart'
     ],
   },
   {

@@ -11,15 +11,15 @@ const ROAD_MAP_DATA = {
   posts: [
     {
       date: '15 June 2021',
-      title: 'Chia Testnet',
+      title: 'Chia Testnet Live',
       text:
-        'Working day and night on chia testnet to develop chia pool based on official chia protocol.',
+        'Worked on tenstnet9 to test our pool architecture and security',
     },
     {
-      date: '1 July 2021',
-      title: 'Chia Pool',
+      date: '11 July 2021',
+      title: 'Chia Pool Live',
       text:
-        'Chia Pool to Go Live by 1st July 2021',
+        'Chia pool live on official chia protocol.',
     },
     {
       date: '31 October 2021',

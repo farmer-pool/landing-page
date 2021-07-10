@@ -10,6 +10,13 @@ import chiaLeaf from 'assets/images/icons/chia-leaf.png';
 
 const data = [
   {
+    id: 0,
+    icon: chiaLeaf,
+    title: 'Chia Pool',
+    description: `Start farming with Indianpool`,
+    clickLink: `https://chia.indianpool.org/`,
+  },
+  {
     id: 1,
     icon: chiaLogo,
     title: 'Chia Price',
@@ -22,14 +29,7 @@ const data = [
     title: 'Chia Calculator',
     description: `How much can I earn farming Chia (XCH)?`,
     clickLink: `https://chiacalculator.com/`,
-  },
-  {
-    id: 2,
-    icon: chiaLeaf,
-    title: 'Download Chia',
-    description: `Get chia and start farming`,
-    clickLink: `https://www.chia.net/`,
-  },
+  }
 ];
 
 const Chia = () => {
