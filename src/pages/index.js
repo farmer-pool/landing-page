@@ -20,7 +20,7 @@ export default function IndexPage() {
       <Layout>
         <SEO
           title="Indian Pool"
-          description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
+          description="A cryptocurrency pool of the Indians, by the Indians open for everyone"
         />
         <Banner />
         <Chia/>
