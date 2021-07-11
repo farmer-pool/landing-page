@@ -39,7 +39,7 @@ const Chia = () => {
         <SectionHeading
           sx={styles.heading}
           title="Chia"
-          description="Chia is our first priority. Join our pool using the URL: chia-mainnet.indianpool.org"
+          description="Chia is our first priority. To join our pool go to: chia.indianpool.org"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
