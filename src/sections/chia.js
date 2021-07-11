@@ -13,7 +13,7 @@ const data = [
     id: 0,
     icon: chiaLeaf,
     title: 'Chia Pool',
-    description: `Start farming with Indianpool`,
+    description: `Our Pool URL: chia-mainnet.indianpool.org`,
     clickLink: `https://chia.indianpool.org/`,
   },
   {
