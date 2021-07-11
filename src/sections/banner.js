@@ -38,7 +38,7 @@ const Banner = () => {
           <Box sx={styles.heading}>
             <Heading sx={styles.title}>Indian Pool</Heading>
             <Text as="p" sx={styles.description}>
-              A cryptocurrency pool of the Indians, by the Indians open for everyone
+              A cryptocurrency pool of the Indians, by the Indians open for EVERYONE
             </Text>
           </Box>
           <Box as="figure" sx={styles.illustration}>
