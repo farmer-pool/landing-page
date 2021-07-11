@@ -13,7 +13,7 @@ const data = [
     id: 0,
     icon: chiaLeaf,
     title: 'Chia Pool',
-    description: `Our Pool URL: chia-mainnet.indianpool.org`,
+    description: `Start farming with Indianpool`,
     clickLink: `https://chia.indianpool.org/`,
   },
   {
@@ -39,7 +39,7 @@ const Chia = () => {
         <SectionHeading
           sx={styles.heading}
           title="Chia"
-          description="Chia is our first priority"
+          description="Chia is our first priority. Join our pool using the URL: chia-mainnet.indianpool.org"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
