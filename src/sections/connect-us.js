@@ -12,7 +12,7 @@ const data = [
   {
     id: 1,
     icon: twitter,
-    path: 'https://twitter.com/PoolFarmer',
+    path: 'https://twitter.com/FarmerPool',
   },
   {
     id: 2,
