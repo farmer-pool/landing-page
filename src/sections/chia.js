@@ -4,7 +4,7 @@ import { jsx, Box, Container } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
-import chiaLogo from 'assets/images/icons/chia-logo.png';
+import waLogo from 'assets/images/icons/whatsapp-icon.png';
 import chiaCalc from 'assets/images/icons/chia-calc.png';
 import chiaLeaf from 'assets/images/icons/chia-leaf.png';
 
@@ -18,10 +18,10 @@ const data = [
   },
   {
     id: 1,
-    icon: chiaLogo,
-    title: 'Chia Price',
-    description: `Get latest Chia price chart`,
-    clickLink: `https://coinmarketcap.com/currencies/chia-network/`,
+    icon: waLogo,
+    title: 'New to Crypto Mining?',
+    description: `Feel free to reach out on whatsapp`,
+    clickLink: `https://wa.me/message/KRBCBMF5XZPTI1?src=qr`,
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export default Chia;
 
 const styles = {
   section: {
-    backgroundColor: rgba('#FFF5ED', 0.5),
+    backgroundColor: '#FFF5ED',
     pt: [11, 11, 11, 12, 12, 12, 14],
     pb: [7, 7, 7, 9, 9, 10, 11],
   },
