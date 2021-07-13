@@ -49,7 +49,7 @@ export const menuItems = [
     title: 'Connect',
     items: [
       {
-        path: 'https://twitter.com/PoolIndian',
+        path: 'https://twitter.com/PoolFarmer',
         icon: twitter,
         label: 'Twitter',
         height: 24

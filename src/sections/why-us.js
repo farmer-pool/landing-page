@@ -12,8 +12,8 @@ import whoAreWe from 'assets/images/who-are-we.png';
 const data = [
   {
     id: 1,
-    tabTitle: 'Why choose Indian Pool?',
-    title: 'India based servers for better rewards',
+    tabTitle: 'Why choose Farmer Pool?',
+    title: 'Secure and localized servers for better rewards',
     description: '' ,
     moreLink: '#explore-more',
     image: whyUsImage1,
@@ -28,7 +28,7 @@ const data = [
   {
     id: 2,
     tabTitle: 'Who are we?',
-    title: `A group of Indians who want to provide india with the best Cryptocurrency pools`,
+    title: `A group of Farmers who want to provide other farmers with the best Cryptocurrency pools`,
     description: ``,
     moreLink: '#explore-more',
     image: whoAreWe,

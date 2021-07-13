@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://indianpool.org',
+  siteUrl: 'https://farmerpool.org',
   generateRobotsTxt: true,
 };

@@ -19,8 +19,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Indian Pool"
-          description="A cryptocurrency pool of the Indians, by the Indians and open for EVERYONE"
+          title="Farmer Pool"
+          description="A cryptocurrency pool of the Farmers, by the Farmers, for the farmers"
         />
         <Banner />
         <Chia/>

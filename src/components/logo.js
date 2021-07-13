@@ -9,7 +9,7 @@ export default function Logo({ isSticky, footer, ...props }) {
     <Link path="/" sx={styles.logo} {...props}>
       {/* <LogoSvg /> */}
       <Image  style={{height: 32}} src={logo} alt="logo" />
-      <Text>INDIAN POOL</Text>
+      <Text>FARMER POOL</Text>
     </Link>
   );
 }

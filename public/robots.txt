@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://indianpool.org
+Host: https://farmerpool.org
 
 # Sitemaps
-Sitemap: https://indianpool.org/sitemap.xml
+Sitemap: https://farmerpool.org/sitemap.xml
