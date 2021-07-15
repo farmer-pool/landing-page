@@ -12,7 +12,7 @@ const data = [
   {
     id: 0,
     icon: chiaLeaf,
-    title: 'Chia Pool',
+    title: 'Official Chia Pool',
     description: `Start farming with Farmerpool chia.farmerpool.org`,
     clickLink: `https://chia.farmerpool.org/`,
   },
@@ -26,9 +26,9 @@ const data = [
   {
     id: 2,
     icon: chiaCalc,
-    title: 'Chia Calculator',
-    description: `How much can I earn farming Chia (XCH)?`,
-    clickLink: `https://chiacalculator.com/`,
+    title: 'Start farming',
+    description: `See How to join pool and earn XCH`,
+    clickLink: `https://chia.farmerpool.org/howtojoin`,
   }
 ];
 
@@ -39,7 +39,7 @@ const Chia = () => {
         <SectionHeading
           sx={styles.heading}
           title="Chia"
-          description="Chia is our first priority. Our chia pool is now live"
+          description="Chia is our first priority. Our official chia pool is now live."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
