@@ -13,6 +13,7 @@ import Blog from 'sections/blog';
 import RoadMap from 'sections/roadmap';
 import Connect from 'sections/connect-us';
 import Chia from '../sections/chia';
+import WaWidget from 'components/footer/WaWidget';
 
 export default function IndexPage() {
   return (
@@ -23,8 +24,8 @@ export default function IndexPage() {
           description="A cryptocurrency pool of the Farmers, by the Farmers, for the farmers"
         />
         <Banner />
-        <Chia/>
-        <RoadMap/>
+        <Chia />
+        <RoadMap />
         {/* <Testimonials /> */}
         {/* <OurTeam /> */}
         {/* <OtherServices /> */}
@@ -33,6 +34,7 @@ export default function IndexPage() {
         {/* <SubscribeUs /> */}
         <Connect />
       </Layout>
+      <WaWidget />
     </ThemeProvider>
   );
 }
