@@ -20,7 +20,7 @@ const data = [
     list: [
       'Faster speeds, Low Fees',
       'Highly transparent & secure',
-      'Hindi/English Support',
+      'Hindi/English/Italian Support',
       'A team of IITians',
       'Ex-Oracle, Qualcomm, Walmart'
     ],
