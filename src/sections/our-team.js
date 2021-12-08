@@ -18,52 +18,60 @@ const data = [
   {
     id: 1,
     avatar: avatar1,
-    name: 'Emmalee Mclain',
+    name: 'Vinit Kumar Shah',
     designation: 'Product Designer',
     socialLinks: [
       {
         name: 'linkedin',
-        link: 'http://dribbble.com',
+        link: 'https://www.linkedin.com/in/vinit-kumar-shah-383a10197/',
       },
       {
         name: 'github',
-        link: 'http://github.com',
+        link: 'https://github.com/Vinit-Kumar-Shah',
       },
       {
         name: 'twitter',
-        link: 'http://twitter.com',
+        link: 'https://twitter.com/Vinit_K_Shah',
       },
     ],
   },
   {
     id: 2,
     avatar: avatar2,
-    name: 'Daisy Morgan',
-    designation: 'Lead developer',
+    name: 'Daluram Jat',
+    designation: 'FOUNDER',
     socialLinks: [
       {
-        name: 'twitter',
-        link: 'http://twitter.com',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/satwik-anmol-1487a3191/',
       },
       {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
+        name: 'twitter',
+        link: 'https://twitter.com/jatdaluram_',
+      },
+      {
+        name: 'facebook',
+        link: 'https://www.facebook.com/daluram.jat',
       },
     ],
   },
   {
     id: 3,
     avatar: avatar3,
-    name: 'Ariyanna Hicks',
-    designation: 'Experience Designer',
+    name: 'Satwik Anmol',
+    designation: 'Product Designer',
     socialLinks: [
       {
-        name: 'twitter',
-        link: 'http://twitter.com',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/daluram-jat-86324936/',
       },
       {
         name: 'github',
-        link: 'http://github.com',
+        link: 'https://github.com/satwikan',
+      },
+      {
+        name: 'twitter',
+        link: 'https://twitter.com/satwikum',
       },
     ],
   },
