@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
-import { FaTwitter, FaGithub, FaLinkedin, } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaFacebook,} from 'react-icons/fa';
 
 const TeamMember = ({ member }) => {
   return (
@@ -25,6 +25,13 @@ const TeamMember = ({ member }) => {
                 <FaLinkedin
                   size="25px"
                   color="#0a66c2"
+                  style={{ backgroundColor: '#ffffff'}}
+                />
+              )}
+              {social?.name === 'facebook' && (
+                <FaFacebook
+                  size="25px"
+                  color="#0167e2"
                   style={{ backgroundColor: '#ffffff'}}
                 />
               )}
