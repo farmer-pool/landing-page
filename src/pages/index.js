@@ -28,7 +28,7 @@ export default function IndexPage() {
         <Chia />
         <RoadMap />
         {/* <Testimonials /> */}
-        {/* <OurTeam /> */}
+        <OurTeam />
         {/* <OtherServices /> */}
         <WhyUs />
         {/* <Blog /> */}
