@@ -21,8 +21,8 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO
-          title="Indian Pool"
-          description="A cryptocurrency pool of the Indians, by the Indians and for the Indians"
+          title="Farmer Pool"
+          description="A cryptocurrency pool of the Farmers, by the Farmers, for the farmers"
         />
         <Banner />
         <Chia />
@@ -35,6 +35,7 @@ export default function IndexPage() {
         {/* <SubscribeUs /> */}
         <Connect />
       </Layout>
+      <WaWidget />
     </ThemeProvider>
   );
 }

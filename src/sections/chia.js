@@ -39,7 +39,7 @@ const Chia = () => {
         <SectionHeading
           sx={styles.heading}
           title="Chia"
-          description="Chia is our first priority"
+          description="Chia is our first priority. Our official chia pool is now live."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (

@@ -36,7 +36,7 @@ const Services = () => {
         <SectionHeading
           sx={styles.heading}
           title="Our Roadmap"
-          description="We have an extensive roadmap for the next 6 months to make indian pool one of the top cryptocurrency pool in the world."
+          description="We have an extensive roadmap for the next 6 months to make farmer pool one of the top cryptocurrency pool in the world."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
